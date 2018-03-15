@@ -24,9 +24,12 @@ def won?(board)
     board.each_with_index { |element, index|
       # if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
       if element == element[index.to_i + 1]
-        match << [index]
-        match << [index.to_i + 1]
-        return match
+        if element == element[index.to_i + 2]
+          match << [index]
+          match << [index.to_i + 1]
+          match << [index.to_i + 2]
+          return match
+        end
       else
         return false
       end
