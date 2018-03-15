@@ -22,10 +22,12 @@ def won?(board)
 
   match = []
   board.each_with_index { |element, index|
-    if element == "X"
-      match << index
-    elsif element == "O"
-      match << index
+    if element == element[index.to_i + 1]
+      if element == element[index.to_i + 2]
+        return [index, index.to_i + 1, index.to_i +2 ]
+      end
+    end
+    
 
 
 
