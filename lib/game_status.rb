@@ -25,7 +25,7 @@ def won?(board)
       return [index, index.to_i + 1, index.to_i + 2]
     end
   }
-
+end
     # if space == board[index+1] && space == board[index+2]
     #   return true
     # elsif space == board[index-1] && space == board[index-2]
@@ -37,8 +37,6 @@ def won?(board)
     # elsif board.all?{ |space| space==" "}
     #   return false
     # end
-  }
-end
 
 # def won?(board)
 #   if board.all?{ |space| space == " " }
