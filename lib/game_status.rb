@@ -31,7 +31,9 @@ def won?(board)
   #     return false
   #   end
   # }
+end
 
+def won?(board)
   if board.all?{ |space| space == " " }
     return false
   elsif board[0] == "X" && board[1] == "X" && board[2] == "X"
