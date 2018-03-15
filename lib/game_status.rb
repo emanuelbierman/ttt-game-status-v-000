@@ -25,6 +25,8 @@ def won?(board)
         return [index, index.to_i + 1, index.to_i + 2]
       end
     }
+  else 
+    return false
   end
 end
     # if space == board[index+1] && space == board[index+2]
