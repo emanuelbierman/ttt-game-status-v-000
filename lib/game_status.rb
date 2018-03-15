@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if "X","X","X" == WIN_COMBINATIONS[0] == board[0],board[1],board[2]
+  if "X","X","X" == board[0],board[1],board[2]
     return true
   match =
   board.each_with_index { |element, index|
