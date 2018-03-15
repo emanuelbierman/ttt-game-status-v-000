@@ -50,7 +50,7 @@ def won?(board)
     return WIN_COMBINATIONS[6]
   elsif board[2] == "O" && board[4] == "O" && board[6] == "O"
     return WIN_COMBINATIONS[7]
-  elsif board.all?{ |space| space == "X" || space == "O"}
+  elsif board.all?{ |space| space == "X" || space == "O" }
     return false
   end
 end
