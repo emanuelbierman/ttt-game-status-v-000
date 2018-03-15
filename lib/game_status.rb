@@ -22,14 +22,9 @@ def won?(board)
 
   match = []
   board.each_with_index { |element, index|
-    if element == element[index.to_i + 1]
-      if element == element[index.to_i + 2]
-        return [index, index.to_i + 1, index.to_i +2 ]
-      end
+    if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
+      return [index, index.to_i + 1, index.to_i +2 ]
     end
-    
-
-
 
     # if space == board[index+1] && space == board[index+2]
     #   return true
