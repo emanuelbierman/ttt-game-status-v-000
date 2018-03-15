@@ -20,7 +20,6 @@ def won?(board)
   # if board[0,3] == ["X", "X", "X"] || board[0,3] == ["O", "O", "O"]
   #   return true
   if full?(board)
-    binding.pry
     board.each_with_index { |element, index|
       if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
         return [index, index.to_i + 1, index.to_i + 2]
