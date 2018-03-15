@@ -29,6 +29,7 @@ def won?(board)
           match << [index.to_i + 1]
           match << [index.to_i + 2]
           return match
+          binding.pry
         end
       else
         return false
