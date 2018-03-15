@@ -62,7 +62,7 @@ end
 def full?(board)
   if board.any? { |space| space == " " }
     return false
-  elsif board.all? { |space| space == "X" } || board.all? { |space| space == "O" }
+  elsif board.all? { |space| space == "X" || space == "O" }
     return true
   end
 end
