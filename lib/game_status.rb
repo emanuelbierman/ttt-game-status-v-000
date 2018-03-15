@@ -23,7 +23,8 @@ def won?(board)
   if full?(board)
     board.each_with_index { |element, index|
       if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
-        return match << [index, index.to_i + 1, index.to_i + 2]
+        match << [index, index.to_i + 1, index.to_i + 2]
+        return match
       else
         return false
       end
