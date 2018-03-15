@@ -32,7 +32,7 @@ def won?(board)
   #   end
   # }
 
-  if board.all?{ |space| space == " "}
+  if board.all?{ |space| space == " " }
     return false
   elsif board[0] == "X" && board[1] == "X" && board[2] == "X"
     return WIN_COMBINATIONS[0]
