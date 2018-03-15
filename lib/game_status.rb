@@ -22,15 +22,11 @@ def won?(board)
   match = []
   if full?(board)
     board.each_with_index { |element, index|
-      # if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
-      binding.pry
-      if element == element[index.to_i + 1]
-        if element == element[index.to_i + 2]
-          match << [index]
-          match << [index.to_i + 1]
-          match << [index.to_i + 2]
-          return match
-        end
+      if (element == element[index.to_i + 1]) && (element == element[index.to_i + 2])
+        match << [index]
+        match << [index.to_i + 1]
+        match << [index.to_i + 2]
+        return match
       else
         return false
       end
