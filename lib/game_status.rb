@@ -18,8 +18,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   board.each_with_index { |element, index|
-    element = board[index]
     
+
     # if space == board[index+1] && space == board[index+2]
     #   return true
     # elsif space == board[index-1] && space == board[index-2]
